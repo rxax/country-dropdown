@@ -1,0 +1,23 @@
+{
+  "name": "react-country-dropdown",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "files": ["dist", "README.md"],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "world-countries": "^2.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
+  }
+}
