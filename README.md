@@ -4,6 +4,8 @@
 ![downloads](https://img.shields.io/npm/dt/simple-react-country-dropdown)
 ![license](https://img.shields.io/npm/l/simple-react-country-dropdown)
 
+Author: George_r
+
 Simple React country selector dropdown with flags, grouped by continent. Works as a React component or as a lightweight web component.
 
 Installation
