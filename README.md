@@ -2,6 +2,8 @@
 
 Simple React app demonstrating a `CountrySelector` component.
 
+![Screenshot of CountrySelector](assets/screenshot.svg)
+
 Getting started
 
 1. Install dependencies
@@ -57,3 +59,5 @@ import { CountrySelector } from './src/plugin'
 ```
 
 The custom element renders the React component into its Shadow DOM and dispatches a `change` event with `{ detail: { value } }` when selection changes.
+
+Screenshot above shows the grouped dropdown with flags and continent dividers.
