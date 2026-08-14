@@ -1,6 +1,7 @@
 {
   "name": "simple-react-country-dropdown",
   "version": "1.0.1",
+  "description": "A tiny React Country selector dropdown with flags, grouped by continent.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,12 +13,31 @@
   "module": "dist/index.esm.js",
   "files": ["dist", "README.md", "assets"],
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "world-countries": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxax/country-dropdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rxax/country-dropdown/issues"
+  },
+  "homepage": "https://github.com/rxax/country-dropdown#readme",
+  "keywords": [
+    "react",
+    "country",
+    "dropdown",
+    "flags",
+    "component"
+  ],
+  "license": "MIT",
+  "author": "Your Name"
 }

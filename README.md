@@ -1,24 +1,53 @@
-# Country Dropdown
+# simple-react-country-dropdown
 
-Simple React app demonstrating a `CountrySelector` component.
+![npm](https://img.shields.io/npm/v/simple-react-country-dropdown)
+![downloads](https://img.shields.io/npm/dt/simple-react-country-dropdown)
+![license](https://img.shields.io/npm/l/simple-react-country-dropdown)
+
+Simple React country selector dropdown with flags, grouped by continent. Works as a React component or as a lightweight web component.
+
+Installation
+
+```bash
+npm install simple-react-country-dropdown
+# or
+yarn add simple-react-country-dropdown
+```
+
+Quick usage (React ESM)
+
+```jsx
+import React, { useState } from 'react'
+import { CountrySelector } from 'simple-react-country-dropdown'
+
+function App(){
+	const [value, setValue] = useState('')
+	return <CountrySelector value={value} onChange={setValue} />
+}
+```
+
+Quick usage (web component)
+
+```html
+<script type="module">
+	import plugin from './src/plugin/index.js'
+	plugin.install(window, 'country-selector')
+	document.querySelector('country-selector').addEventListener('change', e=>console.log(e.detail.value))
+</script>
+
+<country-selector></country-selector>
+```
+
+Screenshot
 
 ![Screenshot of CountrySelector](assets/country-selector.jpg)
 
-Getting started
+Features
 
-1. Install dependencies
-
-```bash
-npm install
-```
-
-2. Run the dev server
-
-```bash
-npm run dev
-```
-
-Open http://localhost:5173 in your browser.
+- Grouped by continent (split North/South America)
+- Flags via CDN
+- Accessible keyboard navigation
+- Usable as React component or web component
 
 Files
 
@@ -28,36 +57,23 @@ Files
 - [src/App.jsx](src/App.jsx) — example usage
 - [src/components/CountrySelector.jsx](src/components/CountrySelector.jsx) — component
 
-Fonts
+Props (main)
 
-- You can use any font you like. Update `src/styles.css` (or provide your own CSS) to load and configure your preferred font.
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `groupedCountries` | Array | — | Optional precomputed groups (see `getCountries`) |
+| `value` | string | `''` | Selected country code (alpha-2)
+| `onChange` | function | — | (value) => void — called when selection changes
+| `placeholder` | string | `Choose a country` | Placeholder text
+| `flagUrl` | string | Flag CDN template | Template URL for flag images (e.g. `https://flagcdn.com/w20/{code}.png`)
 
-- If you prefer a hosted CDN for flags or fonts, update the `@font-face` or `flagUrl` accordingly.
+Development
 
-Using as a React plugin / Web Component
-
-You can use the selector as a lightweight plugin. Two main ways:
-
-1) Import the React component directly:
-
-```jsx
-import { CountrySelector } from './src/plugin'
-// then render in your React app
-<CountrySelector groupedCountries={groups} value={value} onChange={setValue} />
+```bash
+npm install
+npm run dev
 ```
 
-2) Register and use the web component (works outside React):
+License
 
-```html
-<script type="module">
-	import plugin from './src/plugin/index.js'
-	plugin.install(window, 'country-selector')
-	document.querySelector('country-selector').addEventListener('change', e => console.log(e.detail.value))
-</script>
-
-<country-selector placeholder="Pick a country"></country-selector>
-```
-
-The custom element renders the React component into its Shadow DOM and dispatches a `change` event with `{ detail: { value } }` when selection changes.
-
-Screenshot above shows the grouped dropdown with flags and continent dividers.
+MIT — see `package.json` for details.
