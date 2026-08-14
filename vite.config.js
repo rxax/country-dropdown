@@ -5,6 +5,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   build: {
+    cssCodeSplit: false,
     lib: {
       entry: path.resolve(__dirname, 'src/plugin/index.js'),
       name: 'ReactCountryDropdown',
