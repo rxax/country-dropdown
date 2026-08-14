@@ -2,7 +2,7 @@
 
 Simple React app demonstrating a `CountrySelector` component.
 
-![Screenshot of CountrySelector](assets/screenshot.svg)
+![Screenshot of CountrySelector](assets/country-selector.jpg)
 
 Getting started
 
