@@ -4,7 +4,7 @@
 ![downloads](https://img.shields.io/npm/dt/simple-react-country-dropdown)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Author: George_r
+Author: George
 
 Simple React country selector dropdown with flags, grouped by continent. Works as a React component or as a lightweight web component.
 
@@ -15,6 +15,8 @@ npm install simple-react-country-dropdown
 # or
 yarn add simple-react-country-dropdown
 ```
+
+Note: component styles are bundled and injected automatically by the package — you do not need to import any CSS in your app.
 
 Quick usage (React ESM)
 
@@ -27,6 +29,8 @@ function App(){
 	return <CountrySelector value={value} onChange={setValue} />
 }
 ```
+
+No additional style imports required — the package injects its styles at runtime.
 
 Quick usage (web component)
 
