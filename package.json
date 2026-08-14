@@ -1,6 +1,6 @@
 {
   "name": "simple-react-country-dropdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny React Country selector dropdown with flags, grouped by continent.",
   "scripts": {
     "dev": "vite",
