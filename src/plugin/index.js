@@ -1,4 +1,5 @@
 import CountrySelector from '../components/CountrySelector'
+import '../styles.css'
 import CountrySelectorElement from './CountrySelectorElement'
 
 export { CountrySelector }
