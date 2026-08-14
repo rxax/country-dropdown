@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/simple-react-country-dropdown)
 ![downloads](https://img.shields.io/npm/dt/simple-react-country-dropdown)
-![license](https://img.shields.io/npm/l/simple-react-country-dropdown)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Author: George_r
 
