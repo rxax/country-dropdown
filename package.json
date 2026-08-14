@@ -1,5 +1,5 @@
 {
-  "name": "react-country-dropdown",
+  "name": "simple-react-country-dropdown",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
